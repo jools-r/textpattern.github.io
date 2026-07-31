@@ -59,9 +59,8 @@ Other tags used: [title](/tags/title).
 ### Example 2: Display a list of articles omitting current article
 
 ~~~ html
-<txp:article_custom label="related" labeltag="h4" section="<txp:section />" wraptag="ul">
-    <txp:if_article_id>
-    <txp:else />
+<txp:article_custom label="related" labeltag="h4" section='<txp:section />' wraptag="ul">
+    <txp:if_article_id not>
         <li>
             <txp:permlink>
                 <txp:title />
